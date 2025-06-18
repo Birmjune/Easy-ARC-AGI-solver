@@ -1,0 +1,13 @@
+torch
+torchvision
+transformers==4.51.3
+datasets
+peft
+accelerate
+bitsandbytes==0.45.5
+trl==0.15.2
+unsloth
+diskcache
+tqdm==4.67.1
+tokenizers==0.21.1
+vllm
