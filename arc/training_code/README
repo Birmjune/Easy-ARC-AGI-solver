@@ -1,0 +1,22 @@
+How to train the model:
+
+0. Install Requirements: Run this if the required Python packages are not yet installed.
+ pip install -r ./artifacts/requirements.txt 
+
+1. Edit train.py and ensure the path of train_dataset is actual dataset directory.
+ e.g. for us, "/home/student/workspace/dataset"
+
+2. Execute the following command to start training.
+ python ./training_code/train.py
+
+After training, the model will be saved to:
+ artifacts/pretrained_models/Llama-3.1-8B-merged-2.
+
+It is recommended to delete other intermediate folders such as:
+ artifacts/pretrained_models/Llama-3.1-8B-merged-1
+ artifacts/pretrained_models/Llama-3.1-8B-lora
+
+Notes:
+ The model for Final Evaluation (job ID: 1234) was trained with max_steps=3500.
+ The model provided in this submission is further fine-tuned using num_train_epochs=2.
+ For the cpu part, we tried to hard code the patterns for the given examples.
